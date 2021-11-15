@@ -2,7 +2,7 @@
   "name": "cv_file",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://NITINSHARMA108.github.io/CV",
+  "homepage": "https://NITINSHARMA108.github.io/CV",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
