@@ -7,6 +7,7 @@ const DisplayEdu = ({edu,changeEducation}) => {
             return(
                 <div className="edu">
                 <h3>{e.course}</h3>
+                <h4>{e.institute}</h4>
                 <h5>{e.specialisation}</h5>
                 <p><span>From:  {e.dos}</span>&nbsp;&nbsp;&nbsp;<span> To: {e.doc}</span></p>
                 <button onClick={(event)=>{
@@ -14,7 +15,7 @@ const DisplayEdu = ({edu,changeEducation}) => {
                     changeEducation(e.eduid);
                 }
                 }>Delete</button>
-                
+                <hr />
             </div>
             )
 

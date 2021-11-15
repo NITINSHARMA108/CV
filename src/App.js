@@ -62,13 +62,13 @@ function App() {
   }
 
   const changeExperience=(id)=>{
-    console.log('hello brother');
+    
       setexperience(()=>{
-        return experience.filter((exp)=>exp.expid!=id);
+        return experience.filter((e)=>e.expid!=id);
       })
   }
   const changeEducation=(id)=>{
-    console.log('hello brother');
+    
       seteducation(()=>{
         return education.filter((e)=>e.eduid!=id);
       })
@@ -90,7 +90,7 @@ function App() {
       </div>
       <div className="display">
         <DisplayGeneral generalProp={generalProp}/>
-        <h1>Educational Qualifications:</h1>
+        <h1>Education</h1>
         <DisplayEdu edu={education} changeEducation={changeEducation}/>
         <h1>Experience</h1>
         <DisplayExp exp={experience} changeExperience={changeExperience}/>

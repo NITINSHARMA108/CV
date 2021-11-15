@@ -1,5 +1,6 @@
 body{
   width:100%;
+  margin-bottom:20px;
 }
 
 .App{
@@ -33,4 +34,31 @@ form input{
   color:white;
   padding-left:10px;
   padding-right:10px;
+}
+.display h1{
+  padding-left:10px;
+  padding-right:10px;
+}
+.edu{
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: capitalize;
+}
+.edu h3,h5,h4{
+  margin:10px auto;
+}
+.exp{
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform:capitalize;
+}
+button{
+  background-color:#007bff;
+  border-radius:5px;
+  width:50px;
+  text-align:center;
+  border:1px solid black;
+  color:white;
+
+
 }

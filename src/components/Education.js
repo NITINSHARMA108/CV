@@ -4,6 +4,7 @@ const Education = ({addEducation}) => {
     const [eduobject,seteduobject]=useState({
         course:'',
         specialisation:'',
+        institute:'',
         dos:'',
         doc:''
     });
@@ -24,6 +25,8 @@ const Education = ({addEducation}) => {
             <input type="text" placeholder="Enter degree" name="course" value={eduobject.course} onChange={(e)=>setEdu(e)} />
             <label>Enter specialisation</label>
             <input type="text" name="specialisation" placeholder="Enter specialisation" value={eduobject.specialisation} onChange={(e)=>setEdu(e)}/>
+            <label>Enter Institute Name:</label>
+            <input type="text" name="institute" placeholder="Enter institute name" value={eduobject.institute} onChange={(e)=>setEdu(e)}/>
             <label>Starting Date:</label>
             <input type="date" name="dos" value={eduobject.dos} onChange={(e)=>setEdu(e)}/>
             <label>Completion Date:</label>
@@ -34,7 +37,7 @@ const Education = ({addEducation}) => {
                 <button onClick={(e)=>{
                     e.preventDefault();
                     addEducation(eduobject);
-                    seteduobject({course:'',specialisation:'',dos:'',doc:''});
+                    seteduobject({course:'',specialisation:'',institute:'',dos:'',doc:''});
                 }}>Save</button>
                 {/*<button >Add</button>*/}
             </div>
